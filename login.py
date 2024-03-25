@@ -17,7 +17,6 @@ def index():
 def login():
     username = request.form['username']
     password = request.form['password']
-
     if username in users and users[username] == password:
         return f'Welcome, {username}!'
     else:
